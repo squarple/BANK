@@ -22,7 +22,11 @@ public class UsersServiceImpl implements UsersService {
 
     @Override
     public Users findById(int id) {
-        return userRepo.findById(id).get();
+        if (userRepo.findById(id).isPresent()) {
+            return userRepo.findById(id).get();
+        } else {
+            throw new NoSuchElementException();
+        }
     }
 
     @Override
