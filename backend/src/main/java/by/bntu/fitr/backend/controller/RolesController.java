@@ -31,7 +31,7 @@ public class RolesController {
     }
 
     @DeleteMapping("/{id}")
-    public void deleteByID(@PathVariable int id){
+    public void deleteById(@PathVariable int id){
         roleService.deleteById(id);
     }
 
