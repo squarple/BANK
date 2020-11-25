@@ -16,8 +16,8 @@ public class AccountsController {
     private AccountsServiceImpl accountService;
 
     @PostMapping
-    public Accounts create(@RequestBody Accounts forest){
-        return accountService.create(forest);
+    public Accounts create(@RequestBody Accounts account){
+        return accountService.create(account);
     }
 
     @GetMapping("/{id}")
