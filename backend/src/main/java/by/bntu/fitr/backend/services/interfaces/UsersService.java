@@ -10,5 +10,5 @@ public interface UsersService {
     void deleteById(int id);
     int getSize();
     Users findUserByLogin(String login);
-    Users findUsersByLoginAndPassword(String login, String password);
+    Users findUserByLoginAndPassword(String login, String password);
 }
