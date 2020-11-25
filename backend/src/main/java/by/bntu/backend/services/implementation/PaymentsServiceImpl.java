@@ -1,4 +1,4 @@
 package by.bntu.backend.services.implementation;
 
-public interface PaymentsServiceImpl {
+public class PaymentsServiceImpl {
 }
