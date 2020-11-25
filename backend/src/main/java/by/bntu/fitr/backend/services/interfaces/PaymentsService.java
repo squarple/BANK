@@ -9,5 +9,4 @@ public interface PaymentsService {
     List<Payments> findAll(int page, int size);
     void deleteById(int id);
     int getSize();
-
 }
